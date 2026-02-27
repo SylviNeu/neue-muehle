@@ -19,7 +19,7 @@ const Datenschutz = () => (
 
           <div>
             <h2 className="font-serif text-xl text-foreground">3. Verantwortliche Stelle</h2>
-            <p>Hof Frische<br />Musterstraße 1<br />12345 Musterstadt<br />E-Mail: info@hof-frische.de</p>
+            <p>Neue Mühle<br />Waldstraße 31<br />14806 Dahnsdorf/Neue Mühlet<br />E-Mail: info@neue-muehle.de</p>
           </div>
 
           <div>
