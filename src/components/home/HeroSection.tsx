@@ -31,11 +31,7 @@ export const HeroSection = () => (
         <div className="flex flex-col sm:flex-row gap-3">
           
           {/* PRIMARY CTA */}
-          <Button
-            asChild
-            size="lg"
-            className="bg-secondary text-white hover:bg-secondary/90 text-base font-semibold shadow-xl transition-all duration-300"
-          >
+          <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
             <Link to="/shop">
               Zum Shop <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
