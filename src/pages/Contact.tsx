@@ -109,9 +109,9 @@ const Contact = () => {
               <div>
                 <h3 className="font-serif text-xl mb-4">So erreichen Sie uns</h3>
                 <ul className="space-y-4">
-                  <li className="flex gap-3"><MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" /><div><p className="font-medium">Adresse</p><p className="text-muted-foreground text-sm">Musterstraße 1, 12345 Musterstadt</p></div></li>
+                  <li className="flex gap-3"><MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" /><div><p className="font-medium">Adresse</p><p className="text-muted-foreground text-sm">Waldstraße 3, 14806 Dahnsdorf/Neue Mühle</p></div></li>
                   <li className="flex gap-3"><Phone className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" /><div><p className="font-medium">Telefon</p><p className="text-muted-foreground text-sm">+49 123 456 789</p></div></li>
-                  <li className="flex gap-3"><Mail className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" /><div><p className="font-medium">E-Mail</p><p className="text-muted-foreground text-sm">info@hof-frische.de</p></div></li>
+                  <li className="flex gap-3"><Mail className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" /><div><p className="font-medium">E-Mail</p><p className="text-muted-foreground text-sm">info@neue-muehle.de</p></div></li>
                 </ul>
               </div>
 
