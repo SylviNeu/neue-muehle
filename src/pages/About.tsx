@@ -4,6 +4,18 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Leaf, Droplets, Sun, Heart } from "lucide-react";
 import farmerPortrait from "@/assets/farmer-portrait.jpg";
 import heroFarm from "@/assets/hero-farm.jpg";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+export default function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 const stats = [
   { value: "20+", label: "Jahre Bio-Anbau" },
