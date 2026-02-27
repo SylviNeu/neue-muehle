@@ -9,17 +9,17 @@ const Impressum = () => (
         <div className="prose prose-neutral max-w-none space-y-6 text-muted-foreground">
           <div>
             <h2 className="font-serif text-xl text-foreground">Angaben gemäß § 5 TMG</h2>
-            <p>Hof Frische<br />Musterstraße 1<br />12345 Musterstadt</p>
+            <p>Neue Mühle<br />Waldstraße 3<br />14806 Dahnsdorf/Neue Mühle</p>
           </div>
 
           <div>
             <h2 className="font-serif text-xl text-foreground">Vertreten durch</h2>
-            <p>Max Mustermann, Diplom-Landwirt</p>
+            <p>Christian Hoffmann, Diplom-Landwirt</p>
           </div>
 
           <div>
             <h2 className="font-serif text-xl text-foreground">Kontakt</h2>
-            <p>Telefon: +49 123 456 789<br />E-Mail: info@hof-frische.de</p>
+            <p>Telefon: +49 123 456 789<br />E-Mail: info@neue-muehle.de</p>
           </div>
 
           <div>
