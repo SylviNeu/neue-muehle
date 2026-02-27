@@ -31,7 +31,7 @@ export const HeroSection = () => (
         <div className="flex flex-col sm:flex-row gap-3">
           
           {/* PRIMARY CTA */}
-          <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+          <Button asChild size="lg" className="bg-cta text-cta-foreground hover:bg-cta/90 font-semibold shadow-lg">
             <Link to="/shop">
               Zum Shop <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
@@ -42,7 +42,7 @@ export const HeroSection = () => (
             asChild
             size="lg"
             variant="outline"
-            className="border-secondary text-white hover:bg-secondary/20 text-base font-semibold backdrop-blur-sm transition-all duration-300"
+            className="border-primary-foreground/60 text-primary-foreground bg-foreground/30 backdrop-blur-sm hover:bg-foreground/50 font-semibold transition-all duration-300"
           >
             <Link to="/kontakt">
               <Truck className="mr-2 h-4 w-4" />
