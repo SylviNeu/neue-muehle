@@ -20,7 +20,7 @@ export const Header = () => {
       <div className="container-narrow mx-auto flex items-center justify-between h-16 px-4 sm:px-6">
         <Link to="/" className="flex items-center gap-2 font-serif text-xl text-primary">
           <Leaf className="h-6 w-6" />
-          <span>Hof Frische</span>
+          <span>Neue Mühle</span>
         </Link>
 
         {/* Desktop nav */}
