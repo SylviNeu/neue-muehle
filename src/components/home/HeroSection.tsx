@@ -21,12 +21,12 @@ export const HeroSection = () => (
           Regional angebaut, saisonal geerntet – nachhaltige Landwirtschaft für bewussten Genuss.
         </p>
         <div className="flex flex-col sm:flex-row gap-3">
-          <Button asChild size="lg" className="bg-cta text-cta-foreground hover:bg-cta/90 text-base">
+          <Button asChild size="lg" className="bg-cta text-cta-foreground hover:bg-cta/90 text-base font-semibold shadow-lg">
             <Link to="/shop">
               Zum Shop <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
-          <Button asChild variant="outline" size="lg" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-base">
+          <Button asChild size="lg" className="bg-background/95 text-foreground hover:bg-background border border-background/80 text-base font-semibold shadow-lg">
             <Link to="/kontakt">
               <Truck className="mr-2 h-4 w-4" /> Abholung & Lieferung
             </Link>
