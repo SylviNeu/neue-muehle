@@ -97,8 +97,17 @@ const Contact = () => {
                     />
                     {errors.message && <p className="text-destructive text-xs mt-1">{errors.message}</p>}
                   </div>
-                  <Button type="submit" size="sm" className="bg-cta text-cta-foreground hover:bg-cta/90" disabled={isSubmitting}>
-                    {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : "Nachricht senden"}
+                  <Button
+                    type="submit"
+                    size="sm"
+                    className="bg-primary text-primary-foreground hover:bg-primary/90 transition-colors duration-300"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? (
+                      <Loader2 className="h-4 w-4 animate-spin" />
+                    ) : (
+                      "Nachricht senden"
+                    )}
                   </Button>
                 </form>
               )}
