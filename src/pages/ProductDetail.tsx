@@ -179,18 +179,65 @@ const ProductDetail = () => {
                 </div>
               )}
 
-              {/* Quantity */}
-              <div>
-                <label className="text-sm font-medium mb-2 block">Menge</label>
+              {/* Quantity + Live Total */}
+              <div className="space-y-2">
+                <label className="text-sm font-medium block">Menge</label>
+              
                 <div className="flex items-center gap-3">
-                  <Button variant="outline" size="icon" onClick={() => setQuantity(Math.max(1, quantity - 1))}>
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="icon"
+                    onClick={() => setQuantity(Math.max(1, quantity - 1))}
+                  >
                     <Minus className="h-4 w-4" />
                   </Button>
-                  <span className="w-12 text-center font-medium">{quantity}</span>
-                  <Button variant="outline" size="icon" onClick={() => setQuantity(quantity + 1)}>
+              
+                  <input
+                    type="number"
+                    min={1}
+                    value={quantity}
+                    onChange={(e) => {
+                      const raw = e.target.value;
+                      // allow empty while typing
+                      if (raw === "") return;
+              
+                      const value = Number(raw);
+                      if (!Number.isFinite(value)) return;
+              
+                      setQuantity(Math.max(1, Math.floor(value)));
+                    }}
+                    onBlur={(e) => {
+                      // if user clears the field, fallback to 1
+                      if (e.target.value === "") setQuantity(1);
+                    }}
+                    className="w-16 text-center border rounded-lg px-2 py-1 bg-background focus:outline-none focus:ring-2 focus:ring-primary"
+                    inputMode="numeric"
+                    pattern="[0-9]*"
+                  />
+              
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="icon"
+                    onClick={() => setQuantity(quantity + 1)}
+                  >
                     <Plus className="h-4 w-4" />
                   </Button>
                 </div>
+              
+                {/* Live total */}
+                {selectedVariant && (
+                  <div className="text-sm text-muted-foreground">
+                    Gesamt:{" "}
+                    <span className="font-semibold text-foreground">
+                      {formatPrice(
+                        (Number(selectedVariant.price.amount) * quantity).toFixed(2),
+                        selectedVariant.price.currencyCode
+                      )}
+                    </span>
+                  </div>
+                )}
               </div>
 
               <Button
