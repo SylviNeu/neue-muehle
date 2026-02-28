@@ -39,6 +39,17 @@ export interface ShopifyProduct {
             name: string;
             value: string;
           }>;
+          unitPrice?: {
+            amount: string;
+            currencyCode: string;
+          } | null;
+          unitPriceMeasurement?: {
+            measuredType: string;
+            quantityUnit: string;
+            quantityValue: number;
+            referenceUnit: string;
+            referenceValue: number;
+          } | null;
         };
       }>;
     };
@@ -116,6 +127,17 @@ export const PRODUCTS_QUERY = `
                   name
                   value
                 }
+                unitPrice {
+                  amount
+                  currencyCode
+                }
+                unitPriceMeasurement {
+                  measuredType
+                  quantityUnit
+                  quantityValue
+                  referenceUnit
+                  referenceValue
+                }
               }
             }
           }
@@ -164,6 +186,17 @@ export const PRODUCT_BY_HANDLE_QUERY = `
             selectedOptions {
               name
               value
+            }
+            unitPrice {
+              amount
+              currencyCode
+            }
+            unitPriceMeasurement {
+              measuredType
+              quantityUnit
+              quantityValue
+              referenceUnit
+              referenceValue
             }
           }
         }
@@ -313,4 +346,23 @@ export function formatPrice(amount: string, currencyCode: string): string {
     style: 'currency',
     currency: currencyCode,
   }).format(parseFloat(amount));
+}
+
+const UNIT_LABELS: Record<string, string> = {
+  KILOGRAMS: 'kg',
+  GRAMS: 'g',
+  LITERS: 'l',
+  MILLILITERS: 'ml',
+};
+
+export function formatUnitPrice(variant: {
+  unitPrice?: { amount: string; currencyCode: string } | null;
+  unitPriceMeasurement?: { referenceUnit: string; referenceValue: number } | null;
+}): string | null {
+  if (!variant.unitPrice || !variant.unitPriceMeasurement) return null;
+  const { amount, currencyCode } = variant.unitPrice;
+  const { referenceUnit, referenceValue } = variant.unitPriceMeasurement;
+  const label = UNIT_LABELS[referenceUnit] || referenceUnit;
+  const prefix = referenceValue !== 1 ? `${referenceValue} ` : '';
+  return `${formatPrice(amount, currencyCode)} / ${prefix}${label}`;
 }

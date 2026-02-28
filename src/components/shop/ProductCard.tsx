@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ShoppingCart, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useCartStore, type ShopifyProduct } from "@/stores/cartStore";
-import { formatPrice } from "@/lib/shopify";
+import { formatPrice, formatUnitPrice } from "@/lib/shopify";
 import { toast } from "sonner";
 
 interface ProductCardProps {
@@ -55,9 +55,16 @@ export const ProductCard = ({ product }: ProductCardProps) => {
         <div className="p-4 space-y-2">
           <h3 className="font-medium text-sm line-clamp-2">{node.title}</h3>
           <div className="flex items-center justify-between">
-            <span className="font-serif text-lg text-primary">
-              {formatPrice(price.amount, price.currencyCode)}
-            </span>
+            <div>
+              <span className="font-serif text-lg text-primary">
+                {formatPrice(price.amount, price.currencyCode)}
+              </span>
+              {variant && formatUnitPrice(variant) && (
+                <span className="block text-xs text-muted-foreground">
+                  {formatUnitPrice(variant)}
+                </span>
+              )}
+            </div>
             <Button
               size="sm"
               variant="outline"
