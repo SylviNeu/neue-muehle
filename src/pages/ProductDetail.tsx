@@ -132,16 +132,13 @@ const ProductDetail = () => {
               <h1 className="font-serif text-3xl sm:text-4xl">{product.title}</h1>
 
               {selectedVariant && (
-                <div>
-                  <p className="font-serif text-2xl text-primary">
-                    {formatPrice(selectedVariant.price.amount, selectedVariant.price.currencyCode)}
-                  </p>
-                  {formatUnitPrice(selectedVariant) && (
-                    <p className="text-sm text-muted-foreground mt-1">
-                      {formatUnitPrice(selectedVariant)}
-                    </p>
-                  )}
-                </div>
+                <p className="font-serif text-2xl text-primary">
+                  {formatUnitPrice(selectedVariant) ||
+                    formatPrice(
+                      selectedVariant.price.amount,
+                      selectedVariant.price.currencyCode
+                    )}
+                </p>
               )}
 
               {/* ✅ FIX: Render formatted Shopify HTML description */}
