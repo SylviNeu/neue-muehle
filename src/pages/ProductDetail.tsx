@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { useProductByHandle } from "@/hooks/useProducts";
 import { useCartStore } from "@/stores/cartStore";
-import { formatPrice } from "@/lib/shopify";
+import { formatPrice, formatUnitPrice } from "@/lib/shopify";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ShoppingCart, Minus, Plus, Loader2, ArrowLeft } from "lucide-react";
@@ -132,9 +132,16 @@ const ProductDetail = () => {
               <h1 className="font-serif text-3xl sm:text-4xl">{product.title}</h1>
 
               {selectedVariant && (
-                <p className="font-serif text-2xl text-primary">
-                  {formatPrice(selectedVariant.price.amount, selectedVariant.price.currencyCode)}
-                </p>
+                <div>
+                  <p className="font-serif text-2xl text-primary">
+                    {formatPrice(selectedVariant.price.amount, selectedVariant.price.currencyCode)}
+                  </p>
+                  {formatUnitPrice(selectedVariant) && (
+                    <p className="text-sm text-muted-foreground mt-1">
+                      {formatUnitPrice(selectedVariant)}
+                    </p>
+                  )}
+                </div>
               )}
 
               {/* ✅ FIX: Render formatted Shopify HTML description */}
