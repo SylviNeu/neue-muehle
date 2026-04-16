@@ -48,7 +48,7 @@ Deno.serve(async (req) => {
       },
       body: JSON.stringify({
         from: 'Kontaktformular <onboarding@resend.dev>',
-        to: ['info@neue-muehle.de'],
+        to: ['neuemuehle@protonmail.com'],
         subject: `Neue Kontaktanfrage von ${name}`,
         html: `
           <h2>Neue Nachricht über das Kontaktformular</h2>
