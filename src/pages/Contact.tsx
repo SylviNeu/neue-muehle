@@ -34,11 +34,20 @@ const Contact = () => {
     }
     setErrors({});
     setIsSubmitting(true);
-    // Simulate submission (replace with Resend integration later)
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    setIsSubmitting(false);
-    setSubmitted(true);
-    toast.success("Nachricht gesendet!", { position: "top-center" });
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: { name: result.data.name, email: result.data.email, message: result.data.message },
+      });
+      if (error) throw error;
+      if (data && !data.success) throw new Error(data.error || 'Fehler beim Senden');
+      setSubmitted(true);
+      toast.success("Nachricht gesendet!", { position: "top-center" });
+    } catch (err) {
+      console.error('Contact form error:', err);
+      toast.error("Fehler beim Senden. Bitte versuchen Sie es später erneut.", { position: "top-center" });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
