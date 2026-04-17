@@ -16,9 +16,16 @@ export const HeroSection = () => (
 
     <div className="relative container-narrow mx-auto px-4 sm:px-6 py-20">
       <div className="max-w-xl space-y-6">
-        <span className="inline-block bg-cta/90 text-cta-foreground text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">
-          Bio zertifiziert 🌱
-        </span>
+        <div className="flex items-center gap-3">
+          <span className="inline-block bg-cta/90 text-cta-foreground text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">
+            Bio zertifiziert 🌱
+          </span>
+          <img
+            src="/bioland-logo.png"
+            alt="Bioland zertifiziert"
+            className="h-10 w-auto bg-white/90 rounded px-2 py-1"
+          />
+        </div>
 
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif leading-tight text-primary-foreground">
           Frisches Bio-Gemüse direkt von der neuen Mühle
