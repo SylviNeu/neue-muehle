@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Truck } from "lucide-react";
+import { ArrowRight, Shovel } from "lucide-react";
 import heroImage from "@/assets/hero-farm.jpg";
 
 export const HeroSection = () => (
@@ -52,7 +52,7 @@ export const HeroSection = () => (
             className="border-primary-foreground/60 text-primary-foreground bg-foreground/30 backdrop-blur-sm hover:bg-foreground/50 font-semibold transition-all duration-300"
           >
             <Link to="/kontakt">
-              <Truck className="mr-2 h-4 w-4" />
+              <Shovel className="mr-2 h-4 w-4" />
               Abholung & Lieferung
             </Link>
           </Button>
