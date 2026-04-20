@@ -41,7 +41,7 @@ const About = () => (
           <span className="text-sm font-semibold text-accent uppercase tracking-wide">Meister der Landwirtschaft</span>
           <h2 className="font-serif text-3xl">Leidenschaft seit über 20 Jahren</h2>
           <p className="text-muted-foreground leading-relaxed">
-            Als Landwirt habe ich mich früh für den ökologischen Anbau entschieden. 
+            Als Landwirt habe ich mich von Beginn an für den ökologischen Anbau entschieden. 
             Unser Hof steht für nachhaltige Landwirtschaft – ohne Kompromisse bei der Qualität.
           </p>
           <p className="text-muted-foreground leading-relaxed">
