@@ -27,7 +27,24 @@ const About = () => (
       <div className="absolute inset-0 bg-foreground/50" />
       <div className="relative container-narrow mx-auto px-4 sm:px-6">
         <h1 className="font-serif text-4xl sm:text-5xl text-primary-foreground">Über uns</h1>
-        <p className="text-primary-foreground/80 mt-2 text-lg max-w-lg">Die Geschichte hinter Hof Frische.</p>
+      </div>
+    </section>
+
+    {/* Hof Geschichte */}
+    <section className="section-padding">
+      <div className="container-narrow mx-auto max-w-3xl space-y-5 text-muted-foreground leading-relaxed">
+        <p>
+          Direkt am Flüsschen Plane zwischen Dahnsdorf und Mörz liegt die Neue Mühle, gegründet im Jahre 1726. Bis zum Jahre 1944 wurde dort mit Wasserkraft Getreide gemahlen, danach, in LPG Eigentum, dienten die Stallgebäude der Läuferproduktion, und das Wohnhaus wurde „umgebaut" und vermietet. Dabei verfielen die Gebäude zusehends und standen seit 1991 leer.
+        </p>
+        <p>
+          Seit 1998 wohnen wir auf dem Grundstück und bewirtschaften die zum Hof gehörenden Flächen ökologisch, seit 2025 nach den Richtlinien des Landbauverbandes Bioland.
+        </p>
+        <p>
+          So halten wir nicht mehr Tiere, als wir von unserem Land ernähren können, füttern ausschließlich betriebseigene Futtermittel und verzichten auf chemisch-synthetische Dünge- und Pflanzenschutzmittel sowie prophylaktischen Einsatz von Medikamenten und Antibiotika. Eine vielfältige Fruchtfolge hilft, die natürliche Fruchtbarkeit des Bodens zu verbessern und in Angriff genommene Hecken- und Streuobstpflanzungen steigern den Wert des kleinräumlichen Biotopverbundes entlang der Plane und Feldwege für die Wildflora und -fauna.
+        </p>
+        <p>
+          Zum Hof gehört auch eine kleine Herde Mutterkühe. Hauptsächlich bauen wir jedoch zahlreiche Sorten Gemüse und Kartoffeln an. So gibt es mehrere Sorten Kartoffeln aller Kochtypen, etliche Sorten Kohl, Salate, Möhren, Zwiebeln, Porree, Kürbisse, Zuckermais, Tomaten, Rote Bete u.v.m.. Die Produkte werden zum großen Teil an die Bio- und Naturkostläden in Berlin und im Potsdamer Raum abgesetzt, einen Teil unserer Ware liefern wir an Naturkost-Großhändler. Seit einigen Jahren beliefern wir auch Privathaushalte mit unserer beliebten Abokiste.
+        </p>
       </div>
     </section>
 
