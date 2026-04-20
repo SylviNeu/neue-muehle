@@ -30,44 +30,26 @@ const About = () => (
       </div>
     </section>
 
-    {/* Hof Geschichte */}
+    {/* Hof Geschichte mit Foto */}
     <section className="section-padding">
-      <div className="container-narrow mx-auto max-w-3xl space-y-5 text-muted-foreground leading-relaxed">
-        <p>
-          Direkt am Flüsschen Plane zwischen Dahnsdorf und Mörz liegt die Neue Mühle, gegründet im Jahre 1726. Bis zum Jahre 1944 wurde dort mit Wasserkraft Getreide gemahlen, danach, in LPG Eigentum, dienten die Stallgebäude der Läuferproduktion, und das Wohnhaus wurde „umgebaut" und vermietet. Dabei verfielen die Gebäude zusehends und standen seit 1991 leer.
-        </p>
-        <p>
-          Seit 1998 wohnen wir auf dem Grundstück und bewirtschaften die zum Hof gehörenden Flächen ökologisch, seit 2025 nach den Richtlinien des Landbauverbandes Bioland.
-        </p>
-        <p>
-          So halten wir nicht mehr Tiere, als wir von unserem Land ernähren können, füttern ausschließlich betriebseigene Futtermittel und verzichten auf chemisch-synthetische Dünge- und Pflanzenschutzmittel sowie prophylaktischen Einsatz von Medikamenten und Antibiotika. Eine vielfältige Fruchtfolge hilft, die natürliche Fruchtbarkeit des Bodens zu verbessern und in Angriff genommene Hecken- und Streuobstpflanzungen steigern den Wert des kleinräumlichen Biotopverbundes entlang der Plane und Feldwege für die Wildflora und -fauna.
-        </p>
-        <p>
-          Zum Hof gehört auch eine kleine Herde Mutterkühe. Hauptsächlich bauen wir jedoch zahlreiche Sorten Gemüse und Kartoffeln an. So gibt es mehrere Sorten Kartoffeln aller Kochtypen, etliche Sorten Kohl, Salate, Möhren, Zwiebeln, Porree, Kürbisse, Zuckermais, Tomaten, Rote Bete u.v.m.. Die Produkte werden zum großen Teil an die Bio- und Naturkostläden in Berlin und im Potsdamer Raum abgesetzt, einen Teil unserer Ware liefern wir an Naturkost-Großhändler. Seit einigen Jahren beliefern wir auch Privathaushalte mit unserer beliebten Abokiste.
-        </p>
-      </div>
-    </section>
-
-    {/* Farmer story */}
-    <section className="section-padding">
-      <div className="container-narrow mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div className="rounded-2xl overflow-hidden shadow-xl">
+      <div className="container-narrow mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        <div className="rounded-2xl overflow-hidden shadow-xl md:sticky md:top-24">
           <img src={farmerPortrait} alt="Der Landwirt" className="w-full aspect-[4/5] object-cover" />
         </div>
-        <div className="space-y-4">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wide">Meister der Landwirtschaft</span>
-          <h2 className="font-serif text-3xl">Leidenschaft seit über 20 Jahren</h2>
-          <p className="text-muted-foreground leading-relaxed">
-            Als Landwirt habe ich mich von Beginn an für den ökologischen Anbau entschieden. 
-            Unser Hof steht für nachhaltige Landwirtschaft – ohne Kompromisse bei der Qualität.
+        <div className="space-y-5 text-muted-foreground leading-relaxed">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wide">Die Neue Mühle</span>
+          <h2 className="font-serif text-3xl text-foreground">Unsere Geschichte</h2>
+          <p>
+            Direkt am Flüsschen Plane zwischen Dahnsdorf und Mörz liegt die Neue Mühle, gegründet im Jahre 1726. Bis zum Jahre 1944 wurde dort mit Wasserkraft Getreide gemahlen, danach, in LPG Eigentum, dienten die Stallgebäude der Läuferproduktion, und das Wohnhaus wurde „umgebaut" und vermietet. Dabei verfielen die Gebäude zusehends und standen seit 1991 leer.
           </p>
-          <p className="text-muted-foreground leading-relaxed">
-            Von Salat über Tomaten bis hin zu Kartoffeln – alles wächst in natürlichen Kreisläufen. 
-            Unsere Böden werden gepflegt, nicht ausgebeutet. So schmeckt man den Unterschied.
+          <p>
+            Seit 1998 wohnen wir auf dem Grundstück und bewirtschaften die zum Hof gehörenden Flächen ökologisch, seit 2025 nach den Richtlinien des Landbauverbandes Bioland.
           </p>
-          <p className="text-muted-foreground leading-relaxed">
-            Der direkte Verkauf an unsere Kunden ist mir besonders wichtig. Denn wer sein Essen kennt, 
-            genießt es bewusster.
+          <p>
+            So halten wir nicht mehr Tiere, als wir von unserem Land ernähren können, füttern ausschließlich betriebseigene Futtermittel und verzichten auf chemisch-synthetische Dünge- und Pflanzenschutzmittel sowie prophylaktischen Einsatz von Medikamenten und Antibiotika. Eine vielfältige Fruchtfolge hilft, die natürliche Fruchtbarkeit des Bodens zu verbessern und in Angriff genommene Hecken- und Streuobstpflanzungen steigern den Wert des kleinräumlichen Biotopverbundes entlang der Plane und Feldwege für die Wildflora und -fauna.
+          </p>
+          <p>
+            Zum Hof gehört auch eine kleine Herde Mutterkühe. Hauptsächlich bauen wir jedoch zahlreiche Sorten Gemüse und Kartoffeln an. So gibt es mehrere Sorten Kartoffeln aller Kochtypen, etliche Sorten Kohl, Salate, Möhren, Zwiebeln, Porree, Kürbisse, Zuckermais, Tomaten, Rote Bete u.v.m.. Die Produkte werden zum großen Teil an die Bio- und Naturkostläden in Berlin und im Potsdamer Raum abgesetzt, einen Teil unserer Ware liefern wir an Naturkost-Großhändler. Seit einigen Jahren beliefern wir auch Privathaushalte mit unserer beliebten Abokiste.
           </p>
         </div>
       </div>
