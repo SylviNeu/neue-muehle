@@ -14,7 +14,7 @@ const stats = [
 
 const values = [
   { icon: Leaf, title: "Ökologisch", description: "Wir verzichten komplett auf chemische Dünge- und Pflanzenschutzmittel und bevorzugen Saatgut samenfester Sorten." },
-  { icon: Droplets, title: "Ressourcenschonend", description: "Wassersparende Bewässerung und schonende Bodenbearbeitung." },
+  { icon: Droplets, title: "Ressourcenschonend", description: "Wassersparende Bewässerung, schonende Bodenbearbeitung und weitgehende Nutzung erneuerbarer Energien." },
   { icon: Sun, title: "Saisonal", description: "Wir ernten, was die Natur zur jeweiligen Jahreszeit hergibt." },
   { icon: Heart, title: "Mit Herz", description: "Jede Pflanze wird mit Sorgfalt und Leidenschaft angebaut." },
 ];
