@@ -18,7 +18,7 @@ export const HeroSection = () => (
       <div className="max-w-xl space-y-6">
         <div className="flex items-center gap-3">
           <span className="inline-block bg-cta/90 text-cta-foreground text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">
-            Bio zertifiziert 🌱
+            Bio- und Bioland-zertifiziert 🌱
           </span>
           <img
             src="/bioland-logo.png"
