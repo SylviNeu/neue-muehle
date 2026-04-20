@@ -44,7 +44,7 @@ export const Footer = () => (
       </div>
 
       <div className="border-t border-primary-foreground/20 mt-12 pt-6 text-center text-sm opacity-60">
-        © {new Date().getFullYear()} Neue Mühle — Diplom-Landwirt. Alle Rechte vorbehalten.
+        © {new Date().getFullYear()} Neue Mühle — Meister der Landwirtschaft. Alle Rechte vorbehalten.
       </div>
     </div>
   </footer>

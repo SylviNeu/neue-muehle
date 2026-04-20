@@ -11,7 +11,7 @@ export const AboutPreview = () => (
           <span className="text-sm font-semibold text-accent uppercase tracking-wide">Über uns</span>
           <h2 className="font-serif text-3xl sm:text-4xl mt-2 mb-4">Leidenschaft für die Erde</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Als Diplom-Landwirt bewirtschafte ich unseren Bio-Hof seit über 20 Jahren mit Überzeugung. 
+            Als Meister der Landwirtschaft bewirtschafte ich unseren Bio-Hof seit über 20 Jahren mit Überzeugung. 
             Nachhaltigkeit, Qualität und der direkte Kontakt zu unseren Kunden stehen bei uns im Mittelpunkt.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-6">

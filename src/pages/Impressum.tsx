@@ -14,7 +14,7 @@ const Impressum = () => (
 
           <div>
             <h2 className="font-serif text-xl text-foreground">Vertreten durch</h2>
-            <p>Christian Hoffmann, Diplom-Landwirt</p>
+            <p>Christian Hoffmann, Meister der Landwirtschaft</p>
           </div>
 
           <div>

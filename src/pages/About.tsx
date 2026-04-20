@@ -38,7 +38,7 @@ const About = () => (
           <img src={farmerPortrait} alt="Der Landwirt" className="w-full aspect-[4/5] object-cover" />
         </div>
         <div className="space-y-4">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wide">Diplom-Landwirt</span>
+          <span className="text-sm font-semibold text-accent uppercase tracking-wide">Meister der Landwirtschaft</span>
           <h2 className="font-serif text-3xl">Leidenschaft seit über 20 Jahren</h2>
           <p className="text-muted-foreground leading-relaxed">
             Als studierter Landwirt habe ich mich früh für den ökologischen Anbau entschieden. 
