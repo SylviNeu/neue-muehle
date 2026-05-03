@@ -29,7 +29,7 @@ export const Footer = () => (
           <h4 className="font-serif text-lg mb-4">Kontakt</h4>
           <ul className="space-y-3 text-sm opacity-80">
             <li className="flex items-center gap-2"><MapPin className="h-4 w-4 flex-shrink-0" /> Waldstr. 3, 14806 Dahnsdorf/Neue Mühle</li>
-            <li className="flex items-center gap-2"><Phone className="h-4 w-4 flex-shrink-0" /> +49 123 456 789</li>
+            <li className="flex items-center gap-2"><Phone className="h-4 w-4 flex-shrink-0" /> 033843-50526 / mobil 0172-3156127</li>
             <li className="flex items-center gap-2"><Mail className="h-4 w-4 flex-shrink-0" /> info@neue-muehle.de</li>
           </ul>
         </div>
