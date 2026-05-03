@@ -9,27 +9,22 @@ const Impressum = () => (
         <div className="prose prose-neutral max-w-none space-y-6 text-muted-foreground">
           <div>
             <h2 className="font-serif text-xl text-foreground">Angaben gemäß § 5 TMG</h2>
-            <p>Neue Mühle<br />Waldstraße 3<br />14806 Dahnsdorf/Neue Mühle</p>
-          </div>
-
-          <div>
-            <h2 className="font-serif text-xl text-foreground">Vertreten durch</h2>
-            <p>Christian Hoffmann, Meister der Landwirtschaft</p>
+            <p>Ökologischer Landbau Christian Hoffmann<br />Waldstraße 3<br />14806 Dahnsdorf</p>
           </div>
 
           <div>
             <h2 className="font-serif text-xl text-foreground">Kontakt</h2>
-            <p>Telefon: +49 123 456 789<br />E-Mail: info@neue-muehle.de</p>
+            <p>Telefon: 01723156127<br />E-Mail: goldene-zukunft@web.de</p>
           </div>
 
           <div>
-            <h2 className="font-serif text-xl text-foreground">Umsatzsteuer-ID</h2>
-            <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:<br />DE XXX XXX XXX</p>
+            <h2 className="font-serif text-xl text-foreground">Steuernummer</h2>
+            <p>St.-Nr.: 048/299/02287</p>
           </div>
 
           <div>
             <h2 className="font-serif text-xl text-foreground">EU-Bio-Zertifizierung</h2>
-            <p>Kontrollstelle: DE-ÖKO-XXX<br />Kontrollnummer: XXXX</p>
+            <p>Kontrollstelle: DE-021-ÖKO-Kontrollstelle</p>
           </div>
 
           <div>
