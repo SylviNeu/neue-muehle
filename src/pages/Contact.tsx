@@ -144,6 +144,24 @@ const Contact = () => {
               </div>
             </div>
           </div>
+
+          <div className="mt-16">
+            <h2 className="font-serif text-2xl sm:text-3xl mb-6">Abholung und Lieferung</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-card rounded-2xl border p-6 space-y-3">
+                <h3 className="font-serif text-xl">Abholung</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Abholtage für bestellte Ware sind Montag, Mittwoch und Freitag, sofern diese Tage keine gesetzlichen Feiertage sind. Wäre der Abholtag ein gesetzlicher Feiertag, dann ist der nächstfolgende Arbeitstag der Abholtag. Bestellungen für Abholungen werden in der Regel innerhalb von zwei Arbeitstagen realisiert.
+                </p>
+              </div>
+              <div className="bg-card rounded-2xl border p-6 space-y-3">
+                <h3 className="font-serif text-xl">Lieferung</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Unser Liefergebiet erstreckt sich von Görzke, Wiesenburg, Bad Belzig, Brück, Niemegk bis Treuenbrietzen (und die Dörfer dazwischen). Lieferungen nach Werder, Michendorf, Potsdam können donnerstags nach Absprache erfolgen. Wir behalten uns vor, im Sinne nachhaltiger und ökologischer Logistik Lieferungen mehrerer Bestellungen zusammenzulegen, wodurch Lieferfristen entstehen können.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </Layout>
