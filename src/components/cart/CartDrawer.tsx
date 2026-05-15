@@ -8,14 +8,17 @@ import { formatPrice } from "@/lib/shopify";
 
 export const CartDrawer = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { items, isLoading, isSyncing, updateQuantity, removeItem, getCheckoutUrl, syncCart } = useCartStore();
+  const { items, isLoading, isSyncing, updateQuantity, removeItem, getCheckoutUrl, syncCart, hasReachedMinimum, missingAmount } = useCartStore();
   const totalItems = items.reduce((sum, item) => sum + item.quantity, 0);
   const totalPrice = items.reduce((sum, item) => sum + (parseFloat(item.price.amount) * item.quantity), 0);
   const currencyCode = items[0]?.price.currencyCode || 'EUR';
+  const minReached = hasReachedMinimum();
+  const missing = missingAmount();
 
   useEffect(() => { if (isOpen) syncCart(); }, [isOpen, syncCart]);
 
   const handleCheckout = () => {
+    if (!minReached) return;
     const checkoutUrl = getCheckoutUrl();
     if (checkoutUrl) {
       window.open(checkoutUrl, '_blank');
