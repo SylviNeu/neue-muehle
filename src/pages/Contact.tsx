@@ -130,7 +130,7 @@ const Contact = () => {
                 <ul className="space-y-4">
                   <li className="flex gap-3"><MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" /><div><p className="font-medium">Adresse</p><p className="text-muted-foreground text-sm">Waldstraße 3, 14806 Dahnsdorf/Neue Mühle</p></div></li>
                   <li className="flex gap-3"><Phone className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" /><div><p className="font-medium">Telefon</p><p className="text-muted-foreground text-sm">033843-50526<br />Mobil: 0172-3156127</p></div></li>
-                  <li className="flex gap-3"><Mail className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" /><div><p className="font-medium">E-Mail</p><p className="text-muted-foreground text-sm">info@neue-muehle.de</p></div></li>
+                  <li className="flex gap-3"><Mail className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" /><div><p className="font-medium">E-Mail</p><p className="text-muted-foreground text-sm">goldene-zukunft@web.de</p></div></li>
                 </ul>
               </div>
 
