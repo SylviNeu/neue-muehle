@@ -8,14 +8,17 @@ import { formatPrice } from "@/lib/shopify";
 
 export const CartDrawer = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { items, isLoading, isSyncing, updateQuantity, removeItem, getCheckoutUrl, syncCart } = useCartStore();
+  const { items, isLoading, isSyncing, updateQuantity, removeItem, getCheckoutUrl, syncCart, hasReachedMinimum, missingAmount } = useCartStore();
   const totalItems = items.reduce((sum, item) => sum + item.quantity, 0);
   const totalPrice = items.reduce((sum, item) => sum + (parseFloat(item.price.amount) * item.quantity), 0);
   const currencyCode = items[0]?.price.currencyCode || 'EUR';
+  const minReached = hasReachedMinimum();
+  const missing = missingAmount();
 
   useEffect(() => { if (isOpen) syncCart(); }, [isOpen, syncCart]);
 
   const handleCheckout = () => {
+    if (!minReached) return;
     const checkoutUrl = getCheckoutUrl();
     if (checkoutUrl) {
       window.open(checkoutUrl, '_blank');
@@ -86,13 +89,29 @@ export const CartDrawer = () => {
                   ))}
                 </div>
               </div>
-              <div className="flex-shrink-0 space-y-4 pt-4 border-t">
+              <div className="flex-shrink-0 space-y-3 pt-4 border-t">
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-semibold">Gesamt</span>
                   <span className="text-xl font-bold">{formatPrice(totalPrice.toString(), currencyCode)}</span>
                 </div>
-                <Button onClick={handleCheckout} className="w-full bg-cta text-cta-foreground hover:bg-cta/90" size="lg" disabled={items.length === 0 || isLoading || isSyncing}>
-                  {isLoading || isSyncing ? <Loader2 className="w-4 h-4 animate-spin" /> : <><ExternalLink className="w-4 h-4 mr-2" />Zur Kasse</>}
+                {!minReached && (
+                  <div className="rounded-lg bg-secondary/70 border border-border px-3 py-2 text-sm text-foreground/80 text-center">
+                    Nur noch {formatPrice(missing.toString(), currencyCode)} bis zum Mindestbestellwert 🥕
+                  </div>
+                )}
+                <Button
+                  onClick={handleCheckout}
+                  className="w-full bg-cta text-cta-foreground hover:bg-cta/90 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                  size="lg"
+                  disabled={items.length === 0 || isLoading || isSyncing || !minReached}
+                >
+                  {isLoading || isSyncing ? (
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                  ) : !minReached ? (
+                    <>Mindestbestellwert {formatPrice(String(14), currencyCode)}</>
+                  ) : (
+                    <><ExternalLink className="w-4 h-4 mr-2" />Zur Kasse</>
+                  )}
                 </Button>
               </div>
             </>

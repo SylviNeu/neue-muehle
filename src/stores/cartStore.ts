@@ -13,6 +13,8 @@ import {
 
 export type { CartItem, ShopifyProduct };
 
+export const MIN_ORDER_VALUE = 14;
+
 interface CartStore {
   items: CartItem[];
   cartId: string | null;
@@ -25,6 +27,9 @@ interface CartStore {
   clearCart: () => void;
   syncCart: () => Promise<void>;
   getCheckoutUrl: () => string | null;
+  getCartTotal: () => number;
+  hasReachedMinimum: () => boolean;
+  missingAmount: () => number;
 }
 
 export const useCartStore = create<CartStore>()(
@@ -127,6 +132,11 @@ export const useCartStore = create<CartStore>()(
 
       clearCart: () => set({ items: [], cartId: null, checkoutUrl: null }),
       getCheckoutUrl: () => get().checkoutUrl,
+
+      getCartTotal: () =>
+        get().items.reduce((sum, item) => sum + parseFloat(item.price.amount) * item.quantity, 0),
+      hasReachedMinimum: () => get().getCartTotal() >= MIN_ORDER_VALUE,
+      missingAmount: () => Math.max(0, MIN_ORDER_VALUE - get().getCartTotal()),
 
       syncCart: async () => {
         const { cartId, isSyncing, clearCart } = get();
