@@ -15,6 +15,14 @@ const Datenschutz = () => (
               werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer untenstehenden
               Datenschutzerklärung.
             </p>
+            <p>
+              Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br />
+              Ökologischer Landbau Christian Hoffmann<br />
+              Waldstraße 3<br />
+              14806 Dahnsdorf<br />
+              Telefon: 01723156127<br />
+              E-Mail: goldene-zukunft@web.de
+            </p>
           </div>
 
           <div>
