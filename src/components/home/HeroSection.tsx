@@ -28,7 +28,7 @@ export const HeroSection = () => (
         </div>
 
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif leading-tight text-primary-foreground">
-          Frisches Bio-Gemüse und beste Kartoffeln direkt von der neuen Mühle
+          Frisches Bio-Gemüse und beste Kartoffeln direkt von der Neuen Mühle
         </h1>
 
         <p className="text-lg text-primary-foreground/80 max-w-md">
