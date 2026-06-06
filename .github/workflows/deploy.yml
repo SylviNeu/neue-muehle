@@ -32,10 +32,13 @@ jobs:
         with:
           path: dist
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
+deploy:
+  needs: build
+  runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/deploy-pages@v4
+  environment:
+    name: github-pages   # 🔥 DAS FEHLT BEI DIR
 
+  steps:
+    - id: deployment
+      uses: actions/deploy-pages@v4
