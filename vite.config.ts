@@ -5,11 +5,6 @@ import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
   base: "/neue-muehle/",
-  server: {
-    host: "::",
-    port: 8080,
-    hmr: { overlay: false },
-  },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
@@ -17,3 +12,6 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
+
+// trigger rebuild
+
