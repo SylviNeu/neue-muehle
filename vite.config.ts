@@ -6,12 +6,7 @@ import { componentTagger } from "lovable-tagger";
 
 export default defineConfig({
   base: "/neue-muehle/",
-  plugins: [react(), componentTagger()].filter(Boolean),
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-  },
+  plugins: [react()],
 });
 
 // trigger rebuild
