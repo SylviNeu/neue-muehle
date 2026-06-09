@@ -13,6 +13,7 @@ import Contact from "./pages/Contact";
 import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
 import NotFound from "./pages/NotFound";
+import AGB from "./pages/AGB";
 
 const queryClient = new QueryClient();
 
