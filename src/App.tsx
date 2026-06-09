@@ -38,6 +38,7 @@ const AppContent = () => {
         <Route path="/kontakt" element={<Contact />} />
         <Route path="/impressum" element={<Impressum />} />
         <Route path="/datenschutz" element={<Datenschutz />} />
+        <Route path="/agb" element={<AGB />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
