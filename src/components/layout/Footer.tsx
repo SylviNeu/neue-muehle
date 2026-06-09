@@ -39,6 +39,7 @@ export const Footer = () => (
           <ul className="space-y-2 text-sm opacity-80">
             <li><Link to="/impressum" className="hover:opacity-100 transition-opacity">Impressum</Link></li>
             <li><Link to="/datenschutz" className="hover:opacity-100 transition-opacity">Datenschutz</Link></li>
+            <li><Link to="/agb" className="hover:opacity-100 transition-opacity">AGB</Link></li>
           </ul>
         </div>
       </div>
