@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Leaf, Droplets, Sun, Heart } from "lucide-react";
-import farmerPortraitAsset from "@/assets/muehle-aussen.jpeg.asset.json";
+import farmerPortraitAsset from "@/assets/farmer-portrait-6644.jpg.asset.json";
 const farmerPortrait = farmerPortraitAsset.url;
 import heroFarm from "@/assets/hero-farm.jpg";
 
