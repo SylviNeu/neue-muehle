@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Leaf, Droplets, Sun, Heart } from "lucide-react";
-import farmerPortrait from "@/assets/farmer-portrait.jpg";
+import farmerPortraitAsset from "@/assets/farmer-portrait-6644.jpg.asset.json";
+const farmerPortrait = farmerPortraitAsset.url;
 import heroFarm from "@/assets/hero-farm.jpg";
 
 const stats = [
@@ -34,7 +35,7 @@ const About = () => (
     <section className="section-padding">
       <div className="container-narrow mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         <div className="rounded-2xl overflow-hidden shadow-xl md:sticky md:top-24">
-          <img src={farmerPortrait} alt="Der Landwirt" className="w-full aspect-[4/5] object-cover" />
+          <img src={farmerPortrait} alt="Christian Hoffmann" className="w-full aspect-[4/5] object-cover" />
         </div>
         <div className="space-y-5 text-muted-foreground leading-relaxed">
           <span className="text-sm font-semibold text-accent uppercase tracking-wide">Die Neue Mühle</span>
