@@ -35,7 +35,7 @@ const About = () => (
     <section className="section-padding">
       <div className="container-narrow mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         <div className="rounded-2xl overflow-hidden shadow-xl md:sticky md:top-24">
-          <img src={farmerPortrait} alt="Die Neue Mühle Dahnsdorf" className="w-full aspect-[4/5] object-cover" />
+          <img src={farmerPortrait} alt="Christian Hoffmann" className="w-full aspect-[4/5] object-cover" />
         </div>
         <div className="space-y-5 text-muted-foreground leading-relaxed">
           <span className="text-sm font-semibold text-accent uppercase tracking-wide">Die Neue Mühle</span>
