@@ -30,7 +30,7 @@ export const Footer = () => (
           <ul className="space-y-3 text-sm opacity-80">
             <li className="flex items-center gap-2"><MapPin className="h-4 w-4 flex-shrink-0" /> Waldstr. 3, 14806 Dahnsdorf/Neue Mühle</li>
             <li className="flex items-center gap-2"><Phone className="h-4 w-4 flex-shrink-0" /> 033843-50526 / mobil 0172-3156127</li>
-            <li className="flex items-center gap-2"><Mail className="h-4 w-4 flex-shrink-0" /> info@neue-muehle.de</li>
+            <li className="flex items-center gap-2"><Mail className="h-4 w-4 flex-shrink-0" /> goldene-zukunft@web.de</li>
           </ul>
         </div>
 
