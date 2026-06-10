@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Bike } from "lucide-react";
-import heroImage from "@/assets/hero-farm.jpg";
+import heroAsset from "@/assets/hero-farm.jpg.asset.json";
+const heroImage = heroAsset.url;
 
 export const HeroSection = () => (
   <section className="relative min-h-[85vh] flex items-center">
