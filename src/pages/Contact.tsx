@@ -159,6 +159,9 @@ const Contact = () => {
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   Unser Liefergebiet erstreckt sich von Görzke, Wiesenburg, Bad Belzig, Brück, Niemegk bis Treuenbrietzen (und die Dörfer dazwischen). Lieferungen nach Werder, Michendorf, Potsdam können donnerstags nach Absprache erfolgen. Wir behalten uns vor, im Sinne nachhaltiger und ökologischer Logistik Lieferungen mehrerer Bestellungen zusammenzulegen, wodurch Lieferfristen entstehen können.
                 </p>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Die Produkte werden in einer Mehrweg-Kiste geliefert. Diese Kiste wird nicht mit verkauft und muss bei der nächsten Lieferung zurückgegeben werden. Kommt es zu keiner weiteren Lieferung, muss die Kiste innerhalb von 4 Wochen zum Lieferanten zurückgebracht werden, anderenfalls werden für die Kiste 8€ Wiederbeschaffungswert berechnet.
+                </p>
               </div>
             </div>
           </div>
