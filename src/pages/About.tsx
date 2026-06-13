@@ -4,7 +4,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Leaf, Droplets, Sun, Heart } from "lucide-react";
 import farmerPortraitAsset from "@/assets/farmer-portrait-6644.jpg.asset.json";
 const farmerPortrait = farmerPortraitAsset.url;
-import heroFarm from "@/assets/hero-farm.jpg";
+import heroFarmAsset from "@/assets/hero-farm.jpg.asset.json";
+const heroFarm = heroFarmAsset.url;
 
 const stats = [
   { value: "20+", label: "Jahre Bio-Anbau" },
