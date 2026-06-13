@@ -2,10 +2,8 @@ import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Leaf, Droplets, Sun, Heart } from "lucide-react";
-import farmerPortraitAsset from "@/assets/farmer-portrait-6644.jpg.asset.json";
-const farmerPortrait = farmerPortraitAsset.url;
-import heroFarmAsset from "@/assets/hero-farm.jpg.asset.json";
-const heroFarm = heroFarmAsset.url;
+import farmerPortrait from "@/assets/farmer-portrait-6644.jpg";
+import heroFarm from "@/assets/hero-farm.jpg";
 
 const stats = [
   { value: "20+", label: "Jahre Bio-Anbau" },
